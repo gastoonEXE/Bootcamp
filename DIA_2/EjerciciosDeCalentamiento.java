@@ -4,6 +4,9 @@ import java.util.Random;
 public class EjerciciosDeCalentamiento {
 
         public static void main(String[] args) {
+
+        System.out.println("numeros curioso");
+
         Scanner Leer = new Scanner(System.in);
         String NRO;
         NRO = " ";
