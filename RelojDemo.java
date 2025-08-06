@@ -5,6 +5,8 @@ public class RelojDemo{
 
     public static void main(String[] args) {
         
+        System.out.println("\nBienvenido al Reloj Demo");
+
         Scanner Leer = new Scanner(System.in);
 
         System.out.println("\nIngresa una cantidad de segundos");
