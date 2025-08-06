@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class RelojDemo{
@@ -12,7 +11,7 @@ public class RelojDemo{
 
         int entrada = Leer.nextInt();
 
-        Reloj reloj = new Reloj(entrada);
+        Reloj reloj = new Reloj (entrada);
 
         System.out.println("Reloj A: " + reloj.toString());
 
