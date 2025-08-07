@@ -116,8 +116,8 @@ public class Generala{
         java.util.Arrays.sort(dadosArray);
         escalera = new String(dadosArray);
 
-        System.out.println("Escalera: " + escalera);
-        System.out.println("Dados: " + dados);
+        // System.out.println("Escalera: " + escalera);
+        // System.out.println("Dados: " + dados);
 
         if (escalera.equals("12345") || escalera.equals("23456") || escalera.equals("13456")) {
             return true;
@@ -166,7 +166,7 @@ public class Generala{
             return; 
         }
         // ESTO SI SE EJECUTA PARA USTEDES
-        System.out.println(g.jugada("11111"));
+        System.out.println(g.jugada("54312"));
 
         // Pruebas
         // System.out.println( "Prueba: 21A11 -> " + g.jugada("21A11"));
@@ -185,33 +185,33 @@ public class Generala{
         // respuestas:
         // Cuál es la probabilidad de sacar generala en un tiro? 
         //    Probabilidad = 6 / 7776 = 0.0007716 (0.07716%)
-        System.out.println("Probabilidad de sacar generala en un tiro: (0.077%)");
+        // System.out.println("Probabilidad de sacar generala en un tiro: (0.077%)");
         
-        // Cuál es la probabilidad de sacar poker en un tiro?
-        //   Probabilidad = 150 / 7776 = 0.0192901 (1.93%)\
-        System.out.println("Probabilidad de sacar poker en un tiro: (1.93%)");
+        // // Cuál es la probabilidad de sacar poker en un tiro?
+        // //   Probabilidad = 150 / 7776 = 0.0192901 (1.93%)\
+        // System.out.println("Probabilidad de sacar poker en un tiro: (1.93%)");
 
-        //Cuál es la probabilidad de sacar full en un tiro?
-        //   Probabilidad = 300 / 7776 = 0.03858 (3.86%)
-        System.out.println("Probabilidad de sacar full en un tiro: (3.86%)");
+        // //Cuál es la probabilidad de sacar full en un tiro?
+        // //   Probabilidad = 300 / 7776 = 0.03858 (3.86%)
+        // System.out.println("Probabilidad de sacar full en un tiro: (3.86%)");
 
-        //Cuál es la probabilidad de sacar escalera en un tiro?
-        //   Probabilidad = 360 / 7776 = 0.0463 (4.63%)
-        System.out.println("Probabilidad de sacar escalera en un tiro: (4.63%)");
+        // //Cuál es la probabilidad de sacar escalera en un tiro?
+        // //   Probabilidad = 360 / 7776 = 0.0463 (4.63%)
+        // System.out.println("Probabilidad de sacar escalera en un tiro: (4.63%)");
 
-        //Cuál es la probabilidad de sacar nada en un tiro?
-        //   Probabilidad = 6960 / 7776 = 0.8955 (89.55%)
-        System.out.println("Probabilidad de sacar nada en un tiro: (89.55%)");
+        // //Cuál es la probabilidad de sacar nada en un tiro?
+        // //   Probabilidad = 6960 / 7776 = 0.8955 (89.55%)
+        // System.out.println("Probabilidad de sacar nada en un tiro: (89.55%)");
 
-        //BONUS:
+        // //BONUS:
 
-        //Cuál es la probabilidad de sacar generala en dos tiros?
-        //   Probabilidad = 358 / 7776 = 4.60%
-        System.out.println("Probabilidad de sacar generala en dos tiros: (4.60%)");
+        // //Cuál es la probabilidad de sacar generala en dos tiros?
+        // //   Probabilidad = 358 / 7776 = 4.60%
+        // System.out.println("Probabilidad de sacar generala en dos tiros: (4.60%)");
 
-        //Cuál es la probabilidad de sacar generala en tres tiros?
-        //   Probabilidad = 1196 / 7776 = 15.38%
-        System.out.println("Probabilidad de sacar generala en tres tiros: (15.38%)");
+        // //Cuál es la probabilidad de sacar generala en tres tiros?
+        // //   Probabilidad = 1196 / 7776 = 15.38%
+        // System.out.println("Probabilidad de sacar generala en tres tiros: (15.38%)");
 
 
 
