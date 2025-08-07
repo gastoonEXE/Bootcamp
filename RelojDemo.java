@@ -39,4 +39,10 @@ public class RelojDemo{
         Leer.close();
         
     }
+
+    public void prueba(){
+        System.out.println("Método de prueba");
+        System.out.println("Otra línea de prueba");
+        System.out.println("Tercera línea de prueba");
+    }
 }
