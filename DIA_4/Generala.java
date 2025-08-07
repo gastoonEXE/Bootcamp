@@ -109,7 +109,17 @@ public class Generala{
     
     boolean esESCALERA(String dados) {
 
-        if (dados.equals("12345") || dados.equals("23456") || dados.equals("34561")) {
+        String escalera;
+
+        //ordenar los dados
+        char[] dadosArray = dados.toCharArray();
+        java.util.Arrays.sort(dadosArray);
+        escalera = new String(dadosArray);
+
+        System.out.println("Escalera: " + escalera);
+        System.out.println("Dados: " + dados);
+
+        if (escalera.equals("12345") || escalera.equals("23456") || escalera.equals("13456")) {
             return true;
         } else {
             return false;
@@ -161,9 +171,11 @@ public class Generala{
         // Pruebas
         // System.out.println( "Prueba: 21A11 -> " + g.jugada("21A11"));
         // System.out.println( "Prueba: 11111 -> " + g.jugada("11111"));
-        // System.out.println( "Prueba: 12345 -> " + g.jugada("12345"));
-        // System.out.println( "Prueba: 23456 -> " + g.jugada("23456"));
-        // System.out.println( "Prueba: 34561 -> " + g.jugada("34561"));
+        // System.out.println( "Prueba: 12345 -> " + g.jugada("12345"));  // Escalera
+        // System.out.println( "Prueba: 23456 -> " + g.jugada("23456"));  // Escalera
+        // System.out.println( "Prueba: 34561 -> " + g.jugada("34561"));  // Escalera
+        // System.out.println( "Prueba: 34561 -> " + g.jugada("13456"));  // Escalera
+        // System.out.println( "Prueba: 34561 -> " + g.jugada("34156"));  // Escalera
         // System.out.println( "Prueba: 11112 -> " + g.jugada("11112"));
         // System.out.println( "Prueba: 11122 -> " + g.jugada("11122"));
         // System.out.println( "Prueba: 11123 -> " + g.jugada("11123"));
