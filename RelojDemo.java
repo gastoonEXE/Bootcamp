@@ -5,6 +5,8 @@ public class RelojDemo{
 
     public static void main(String[] args) {
         
+        System.out.println("\nBienvenido al Reloj Demo");
+
         Scanner Leer = new Scanner(System.in);
 
         System.out.println("\nIngresa una cantidad de segundos");
@@ -43,5 +45,11 @@ public class RelojDemo{
         System.out.println("Hola 2");
         System.out.println("Hola 3");
         System.out.println("Hola 4");
+    }
+    
+    public void prueba(){
+        System.out.println("Método de prueba");
+        System.out.println("Otra línea de prueba");
+        System.out.println("Tercera línea de prueba");
     }
 }
