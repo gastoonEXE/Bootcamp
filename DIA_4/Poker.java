@@ -386,6 +386,46 @@ public class Poker{
 
         System.out.println(g.jugada(mano));
 
+
+
+
+        /*2. Responder a las siguientes preguntas */
+        //
+        // Total manos posibles: 2,598,960
+        // Dividir las Manos favorables entre los manos posibles 
+
+        // Si se mezclan y reparten cartas al azar: Cuál es la probabilidad de obtener una escalera de color?
+        // casos posibles existentes: 10 x 4 = 40
+        System.out.println("Probabilidad de Escalera Color: " + ( 40 / 2598960.0) * 100 + " %");
+
+        // Si se mezclan y reparten cartas al azar: Cuál es la probabilidad de obtener un poker?
+        // casos posibles existentes: 13 x (52 - 4) = 624
+        System.out.println("Probabilidad de Poker: " + ( 624 / 2598960.0) * 100 + " %");
+
+        // Si se mezclan y reparten cartas al azar: Cuál es la probabilidad de obtener un full house?
+        // casos posibles existentes: 13 x (12 x 4) = 6240
+        System.out.println("Probabilidad de Full: " + ( 6240 / 2598960.0) * 100 + " %");
+
+        // Si se mezclan y reparten cartas al azar: Cuál es la probabilidad de obtener una escalera?
+        // casos posibles existentes: 10 x (4^5 - 4) = 10200
+        System.out.println("Probabilidad de Escalera: " + ( 10200 / 2598960.0) * 100 + " %");
+
+        // Si se mezclan y reparten cartas al azar: Cuál es la probabilidad de obtener un trio? 
+        // casos posibles existentes: 13 x 4 x 1176 = 61152
+        System.out.println("Probabilidad de Trio: " + ( 61152 / 2598960.0) * 100 + " %");
+
+        // Si se mezclan y reparten cartas al azar: Cuál es la probabilidad de obtener un par doble?
+        // casos posibles existentes: ( 13 # 2 = 78 ) * 36 * 11 * 4 = 123552
+        System.out.println("Probabilidad de Doble Par: " + ( 123552 / 2598960.0) * 100 + " %");
+
+        //Si se mezclan y reparten cartas al azar: Cuál es la probabilidad de obtener un par?
+        // casos posibles existentes: 13 * 6 * 220 * 64 = 1098240
+        System.out.println("Probabilidad de Par: " + ( 1098240 / 2598960.0) * 100 + " %");
+
+        //Si se mezclan y reparten cartas al azar: Cuál es la probabilidad de no obtener ninguna de las jugadas anteriores?
+        // casos posibles existentes: 40 + 624 + 6240 + 10200 + 61152 + 123552 + 1098240 = 1302540
+        System.out.println("Probabilidad de Ninguna conmbinacion jugada: " + ( 1302540 / 2598960.0) * 100 + " %");
+
     }
 
 }
