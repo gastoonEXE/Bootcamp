@@ -31,6 +31,35 @@ public class Carta {
         return manoStr.trim();
     }
 
+    static int PuntosMano(Carta[] mano, int indx){
+
+        int [] valorManoArray = new int [mano.length];
+
+        for (int i = 0; i < mano.length; i++) {
+
+            if (mano[i].valor >= '2' && mano[i].valor <= '9') {
+                valorManoArray[i] = (int) mano[i].valor - 49; // Convertir el carácter a su valor numérico
+                if (valorManoArray[i] == 1) {
+                }
+            }else if (mano[i].valor == 'T') {
+                valorManoArray[i] = 9; // Asignar un valor 9 para T
+            } else if (mano[i].valor == 'J') {
+                valorManoArray[i] = 10; // Asignar un valor 10 para J
+            } else if (mano[i].valor == 'Q') {
+                valorManoArray[i] = 11; // Asignar un valor 11 para Q
+            } else if (mano[i].valor == 'K') {
+                valorManoArray[i] = 12; // Asignar un valor 12 para K
+                //AsValorK = true;
+            } else if (mano[i].valor == 'A') {
+                valorManoArray[i] = 14;
+            }
+        }
+
+        java.util.Arrays.sort(valorManoArray);
+
+        return valorManoArray[indx];
+        
+    }
     static int PuntosMano(Carta[] mano) {
         int puntos = 0;
         if (Carta.esINVALIDO(mano)) {
@@ -80,7 +109,7 @@ public class Carta {
             for (int i = 1; i < valorManoArray.length; i++) {
                 if (valorManoArray[indexCartaAlta] < valorManoArray[i]) {
                     indexCartaAlta = i;
-                }
+                }      
             }
 
             return valorManoArray[indexCartaAlta] /*+ CartaAlta(mano).getCarta()*/;

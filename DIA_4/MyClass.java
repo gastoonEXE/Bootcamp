@@ -21,8 +21,20 @@ public class MyClass {
         int indexCartaAlta = 0;
 
         for (Carta[] mano : jugadas) {
-            if (Carta.PuntosMano(mano) > Carta.PuntosMano(jugadas.get(indexCartaAlta))) {
-                indexCartaAlta = jugadas.indexOf(mano);
+
+            if (jugadas.indexOf(mano) != indexCartaAlta) {
+                if (Carta.PuntosMano(mano) > Carta.PuntosMano(jugadas.get(indexCartaAlta))) {
+                    indexCartaAlta = jugadas.indexOf(mano);
+                }
+                else if (Carta.PuntosMano(mano) ==  Carta.PuntosMano(jugadas.get(indexCartaAlta))) {
+                    for (int i = 0; i < mano.length; i++) {
+                        if (Carta.PuntosMano(mano, i) >  Carta.PuntosMano(jugadas.get(indexCartaAlta), i)) {
+                            indexCartaAlta = jugadas.indexOf(mano);
+                            break; // Salimos del bucle si encontramos una carta más alta
+                        }
+                    }
+
+                }                
             }
         }
 
@@ -58,7 +70,14 @@ public class MyClass {
         jugadas.add(m2);
         jugadas.add(m3);
 
+        // Poker g = new Poker();
+
         String ganadores = mc.ganadores(jugadas);
+
+        // System.out.println(g.jugada(m1));
+        // System.out.println(g.jugada(m2));
+        // System.out.println(g.jugada(m3));
+
         System.out.println("Ganadores = " + ganadores);
 
     }
