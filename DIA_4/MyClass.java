@@ -18,12 +18,16 @@ public class MyClass {
             }
         }
 
-        if (Carta.PuntosMano(jugadas.get(0)) > Carta.PuntosMano(jugadas.get(1))) {
-            return Carta.GetMano(jugadas.get(0));
-        } else {
-            return Carta.GetMano(jugadas.get(1));
-            
+        int indexCartaAlta = 0;
+
+        for (Carta[] mano : jugadas) {
+            if (Carta.PuntosMano(mano) > Carta.PuntosMano(jugadas.get(indexCartaAlta))) {
+                indexCartaAlta = jugadas.indexOf(mano);
+            }
         }
+
+        return Carta.GetMano(jugadas.get(indexCartaAlta));
+
     }
 
     public static void main(String args[]) {
@@ -43,8 +47,16 @@ public class MyClass {
         m2[3] = new Carta("3C");
         m2[4] = new Carta("3S");
 
+        Carta[] m3 = new Carta[5];
+        m3[0] = new Carta("3S");
+        m3[1] = new Carta("4S");
+        m3[2] = new Carta("5S");
+        m3[3] = new Carta("6S");
+        m3[4] = new Carta("7S");
+
         jugadas.add(m1);
         jugadas.add(m2);
+        jugadas.add(m3);
 
         String ganadores = mc.ganadores(jugadas);
         System.out.println("Ganadores = " + ganadores);
