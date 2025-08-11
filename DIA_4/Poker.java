@@ -50,7 +50,7 @@ public class Poker{
         Poker g = new Poker();
 
         System.out.println(g.jugada(mano));
-        System.out.println(Carta.PuntosMano(mano));
+        //System.out.println(Carta.PuntosMano(mano));
         
 
 
