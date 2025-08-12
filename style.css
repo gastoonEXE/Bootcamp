@@ -6,18 +6,33 @@
 
 /* Ocultar imágenes posteriores */
 .container:hover ~ .container {
-    opacity: 0;
+    /* opacity: 0;
     pointer-events: none;
+    visibility: hidden;
+    display: none; */
+
+    position: absolute;
+    top: -9999999%;
+    left: -9999999%;
+}
+
+.container:hover ~ .image-container {
+    opacity: 1;
+    pointer-events: none;
+    visibility: hidden;
+    display: none;
+    transform: translateY(+100px);
+    z-index: 100;
 }
 
 /* Restaurar al salir del hover */
 .container:hover .container {
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: none;
 }
 
 .image-container {
-    
+    border: #585858 solid 2px;
     width: 600px;
     height: 600px;
     display: flex;
@@ -33,15 +48,10 @@
 }
 
 .primero:hover {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    top: 0px;
-    left: 0px;
-    overflow: show;
-
+    
     border-color: red;
-    z-index: 10;
-    transform: translateY(-10px);
+    /* z-index: 10; */
+    /* transform: translateY(-10px); */
 
 }
 
