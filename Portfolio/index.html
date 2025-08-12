@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- El Body comineza aca -->
+<body>
+    <header>
+        <h1>Alexis Canete</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Acerca de</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Acerca de mí</h2>
+        <p>Breve descripción...</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+            <h3>Título del Proyecto</h3>
+            <p>Descripción del proyecto.</p>
+            <a href="#">Ver proyecto</a>
+        </div>
+        <!-- Más proyectos -->
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Nombre</p>
+    </footer>
+</body>
+</html>
