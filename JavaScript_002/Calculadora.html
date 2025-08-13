@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Calculadora.css">
+</head>
+<body>
+
+<div style="margin-top: 50px;" class="Pantalla">
+    <h id="Pantalla"></h1>       
+</div>
+
+<div class="Pantalla">
+    <h id="Resultado"></h1>       
+</div>
+
+
+<table class="Calculadora">
+<tbody>
+<tr>
+<td onclick="presionar('1')">1</td>
+<td onclick="presionar('2')">2</td>
+<td onclick="presionar('3')">3</td>
+<td onclick="presionar('+')">(+)</td>
+</tr>
+<tr>
+<td onclick="presionar('4')">4</td>
+<td onclick="presionar('5')">5</td>
+<td onclick="presionar('6')">6</td>
+<td onclick="presionar('-')">(-)</td>
+</tr>
+<tr>
+<td onclick="presionar('7')">7</td>
+<td onclick="presionar('8')">8</td>
+<td onclick="presionar('9')">9</td>
+<td onclick="presionar('*')">(*)</td>
+</tr>
+<tr>
+<td onclick="presionar('.')">.</td>
+<td onclick="presionar('0')">0</td>
+<td onclick="presionar('=')">=</td>
+<td onclick="presionar('/')">(/)</td>
+</tr>
+<tr>
+<td onclick="presionar('(')">(</td>
+<td>&nbsp;</td>
+<td onclick="presionar(')')">)</td>
+<td onclick="presionar('CE')">CE</td>
+</tr>
+</tbody>
+</table>    
+
+<script src="Calculadora.js">   </script>
+
+</body>
+</html>
