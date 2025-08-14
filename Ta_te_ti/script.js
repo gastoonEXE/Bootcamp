@@ -10,6 +10,7 @@ const botonReset = document.getElementById('reset');
 
 botonReset.addEventListener('click', () => 
   {
+    console.log("Resetea el juego");
     turno= 0;
     tablerojuego= ["", "", "", "", "", "", "", "", ""];
     box.forEach((box) =>
@@ -18,7 +19,9 @@ botonReset.addEventListener('click', () =>
         result.innerText= "...";
         
       });
-      
+    console.log(tablerojuego);
+    console.log(box)
+    console.log(result)
 });
 
 
@@ -40,6 +43,11 @@ box.forEach((box) =>
           turno++;
           chequearGanador(tablerojuego);
         }
+        else
+        {
+          console.log("Espacio en uso");
+        }
+        
       }      
       )
   }
