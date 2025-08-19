@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS public."Partido"
     "GolesA" integer NOT NULL,
     "GolesB" integer NOT NULL,
     "id_Resultado" integer NOT NULL,
-    PRIMARY KEY ("id_EquipoB")
+    PRIMARY KEY (id)
 );
 
 CREATE TABLE IF NOT EXISTS public."Resultado"
