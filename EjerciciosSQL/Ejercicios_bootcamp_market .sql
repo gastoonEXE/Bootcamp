@@ -100,8 +100,7 @@ limit 10
 select 
 	factura.id, 
 	SUM(producto.precio * factura_detalle.cantidad) as total,
-	Round(SUM(producto.precio * factura_detalle.cantidad) * 0.10) as "IVA 10%" 
---	SUM(producto.precio * factura_detalle.cantidad) * 0.10 as "IVA 10%"
+	ROUND (SUM(producto.precio * factura_detalle.cantidad) * 0.10) as "IVA 10%"
 from factura_detalle
 join factura on factura_id = factura.id
 join cliente on cliente_id = cliente.id
