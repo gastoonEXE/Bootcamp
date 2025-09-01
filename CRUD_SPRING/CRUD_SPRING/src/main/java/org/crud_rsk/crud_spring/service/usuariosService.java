@@ -23,7 +23,7 @@ public class usuariosService {
         return usuariosRepository.findById(id);
     }
 
-    public void saveOrUpdate(usuarios usuarios){
+    public void saveUsuarios(usuarios usuarios){
         usuariosRepository.save(usuarios);
     }
 
