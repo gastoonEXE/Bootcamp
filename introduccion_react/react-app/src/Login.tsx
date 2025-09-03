@@ -25,6 +25,12 @@ function Login() {
         <button type="submit" className="btn btn-primary">
           Iniciar Sesión
         </button>
+        <button
+          className="btn btn-secondary ms-2"
+          onClick={() => navigate("/")}
+        >
+          Cancelar
+        </button>
       </form>
     </div>
   );

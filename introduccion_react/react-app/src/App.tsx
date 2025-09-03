@@ -11,12 +11,14 @@ function Welcome() {
       <p>Por favor, elige una opción:</p>
       <div style={{ marginTop: "30px" }}>
         <button
+          className="btn btn-primary"
           style={{ marginRight: "20px", padding: "10px 20px" }}
           onClick={() => navigate("/register")}
         >
           Registrarse
         </button>
         <button
+          className="btn btn-primary"
           style={{ padding: "10px 20px" }}
           onClick={() => navigate("/login")}
         >

@@ -29,6 +29,12 @@ function Register() {
         <button type="submit" className="btn btn-primary">
           Registrarse
         </button>
+        <button
+          className="btn btn-secondary ms-2"
+          onClick={() => navigate("/")}
+        >
+          Cancelar
+        </button>
       </form>
     </div>
   );
