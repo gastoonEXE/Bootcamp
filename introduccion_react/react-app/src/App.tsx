@@ -1,6 +1,8 @@
-import { useNavigate } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import Register from "./Register";
+import Login from "./Login";
 
-function App() {
+function Welcome() {
   const navigate = useNavigate();
 
   return (
@@ -22,6 +24,16 @@ function App() {
         </button>
       </div>
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Welcome />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/login" element={<Login />} />
+    </Routes>
   );
 }
 
